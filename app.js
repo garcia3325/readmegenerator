@@ -3,7 +3,6 @@ const { writeFile } = require('./utils/generate-file');
 const inquirer = require('inquirer');
 
 const questions = [
-inquirer.prompt(
   {
     type: 'input',
     name: 'email',
@@ -70,7 +69,6 @@ inquirer.prompt(
     message: 'Please select the appropriate license for your application or project',
     choices: ['MIT', 'Mozilla Public License 2.0', 'Open Database License (ODbL)', 'Public Domain Dedication and License (PDDL)', 'The Perl License']
   },  
-)
 ]
 
   // Function to write README File
