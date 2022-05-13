@@ -35,23 +35,9 @@ const questions = [
     }
   },
   {
-    type: 'confirm',
-    name: 'confirmDescription',
-    message: 'Would you like to add description for your project?',
-    default: true
-  },
-  {
     type: 'input',
     name: 'projectDescription',
-    message: 'Enter a Description for your project',
-    validate: projectDescription => {
-      if (projectDescription) {
-        return true;
-      } else {
-        console.log('Please a description for your project!');
-        return false;
-      }
-    }
+    message: 'Enter a Description for your project'
   },
   {
     type: 'input',
@@ -73,7 +59,7 @@ const questions = [
 
   // Function to write README File
   function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => {
+    fs.writeFile('README.MD', 'userInput', (err) => {
       if (err)
         throw err;
       console.log('Success! Information transferred to the ReadMe');
@@ -85,7 +71,6 @@ const questions = [
     inquirer.prompt(questions)
       .then(function (userInput) {
         console.log(userInput);
-        writeToFile("README.md", generateMarkdown(userInput));
       });
     };
 //function call to initialize the app
