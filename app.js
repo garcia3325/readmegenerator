@@ -2,19 +2,12 @@ const fs = require('fs');
 const { writeFile } = require('./utils/generate-file');
 const inquirer = require('inquirer');
 
-inquirer.prompt([
+const questions = [
+inquirer.prompt(
   {
     type: 'input',
     name: 'email',
     message: 'Please enter your email',
-    validate: email => {
-      if (email) {
-        return true;
-      } else {
-        console.log('Please enter an email address!');
-        return false;
-      }
-    }
   },
   {
     type: 'github',
@@ -76,7 +69,9 @@ inquirer.prompt([
     name: 'license',
     message: 'Please select the appropriate license for your application or project',
     choices: ['MIT', 'Mozilla Public License 2.0', 'Open Database License (ODbL)', 'Public Domain Dedication and License (PDDL)', 'The Perl License']
-  },
+  },  
+)
+]
 
   // Function to write README File
   function writeToFile(fileName, data) {
@@ -85,7 +80,7 @@ inquirer.prompt([
         throw err;
       console.log('Success! Information transferred to the ReadMe');
     });
-  },
+  }
 
   //Function to initialize app
   function init() {
