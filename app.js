@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { writeFile } = require('./utils/generate-file');
+const  writeFile  = require('./utils/generate-file');
 const inquirer = require('inquirer');
 
 const questions = [
@@ -57,28 +57,16 @@ const questions = [
   },  
 ]
 
-  // Function to write README File
-  //function writeToFile(fileName, data) {
-   // fs.writeFile('README.MD', 'userInput', (err) => {
-    //  if (err)
-    //    throw err;
-     // console.log('Success! Information transferred to the ReadMe');
-    //});
-  //}
-
   //Function to initialize app
   function init() {
     inquirer.prompt(questions)
-      .then(function (userInput) {
-        console.log(userInput.email);
-        console.log(userInput.githubUserName);
-        console.log(userInput.projectTitle);
-        console.log(userInput.projectDescription);
-        console.log(userInput.installationInstructions);
-        console.log(userInput.usage);
-        console.log(userInput.license);
-      });
-    };
-//function call to initialize the app
-init();
-
+     .then(function (userInput) {
+          console.log(userInput.email);
+         console.log(userInput.githubUserName);
+          console.log(userInput.projectTitle);
+          console.log(userInput.projectDescription);
+          console.log(userInput.installationInstructions);
+         console.log(userInput.usage);
+         console.log(userInput.license);
+       });
+     };
