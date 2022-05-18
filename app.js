@@ -70,3 +70,4 @@ const questions = [
          console.log(userInput.license);
        });
      };
+  init ();
