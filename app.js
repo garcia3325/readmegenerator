@@ -60,28 +60,25 @@ const questions = [
 ]
 
 //Function to initialize app
-  function init() {
-    inquirer.prompt(questions)
-     .then(function (userInput) {
-          console.log(userInput.email);
-         console.log(userInput.githubUserName);
-          console.log(userInput.projectTitle);
-          console.log(userInput.projectDescription);
-          console.log(userInput.installationInstructions);
-         console.log(userInput.usage);
-         console.log(userInput.license);
-        
-         function writeToFile(fileName ,data){
-         fs.writeFile('README.md', generateMarkdown(userInput), (err)=> {
-            if (err)
-            throw err;
-            console.log('Success! Information Transferred');
-          });
-          
-          }
-       });
-     };
+function init() {
+  inquirer.prompt(questions).then(function (userInput) {
+    console.log(userInput.email);
+    console.log(userInput.githubUserName);
+    console.log(userInput.projectTitle);
+    console.log(userInput.projectDescription);
+    console.log(userInput.installationInstructions);
+    console.log(userInput.usage);
+    console.log(userInput.license);
 
+    writeToFile("README.md", userInput);
+  });
+}
 
+function writeToFile(fileName, data) {
+  fs.writeFile(`./${fileName}`, generateMarkdown(data), (err) => {
+    if (err) throw err;
+    console.log("Success! Information Transferred");
+  });
+}
 
-  init ();
+init();
