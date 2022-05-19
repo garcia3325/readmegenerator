@@ -15,7 +15,7 @@ function generateMarkdown(data) {
     ## Description:
     ${data.projectDescription}
     ## Usage
-    ${data.usage}
+    ${data.usage}n
     ## License:
     ${data.license}
     ##Contributing

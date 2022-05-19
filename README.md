@@ -11,15 +11,15 @@
     - [Additional Info] (#Questions)
 
     ## Description:
-    ReadMe File Generator from the Terminal
+    This is a Readme File Generator from the command line
     ## Usage
-    This application can be used by anyone who  is looking   to  generate a   Readme file  from the project's terminal
+    This project can be used by anyone looking to  generate a  ReadMe File via the commnad linen
     ## License:
     MIT
     ##Contributing
-    None
+    
     ##Tests
-    None
+    
     ## Questions
     -Github [garcia3325}](https://github.com/garcia3325)
-    - Email:  
+    - Email: garcia3325@gmail.com 
