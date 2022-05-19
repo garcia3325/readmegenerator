@@ -1,7 +1,7 @@
 const fs = require('fs');
 const  writeFile  = require('./utils/generate-file');
 const inquirer = require('inquirer');
-const generateMarkdown = userInput;
+
 
 const questions = [
   {
@@ -65,7 +65,8 @@ fs.writeFile(fileName, data, (err)=> {
 });
 
 }
-  //Function to initialize app
+
+//Function to initialize app
   function init() {
     inquirer.prompt(questions)
      .then(function (userInput) {
