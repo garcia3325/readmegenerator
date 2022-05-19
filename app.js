@@ -1,5 +1,6 @@
 const fs = require('fs');
 const  writeFile  = require('./utils/generate-file');
+const generateMarkdown = require('./utils/generatemarkdown');
 const inquirer = require('inquirer');
 
 
