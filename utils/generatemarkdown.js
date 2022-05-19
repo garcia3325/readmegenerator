@@ -12,17 +12,17 @@ function generateMarkdown(data) {
     - [Testing](#testing)
     - [Additional Info] (#Questions)
 
-    ### Description:
+    ## Description:
     ${data.projectDescription}
-    ### Usage
+    ## Usage
     ${data.usage}
-    ### License:
+    ## License:
     ${data.license}
-    ###Contributing
+    ##Contributing
     ${data.contributing}
-    ###Tests
+    ##Tests
     ${data.test}
-    ### Questions
+    ## Questions
     -Github [${data.githubUserName}}](https://github.com/${data.githubUserName})
     - Email: ${data.email} `;
 }
