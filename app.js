@@ -58,14 +58,6 @@ const questions = [
     choices: ['MIT', 'Mozilla Public License 2.0', 'Open Database License (ODbL)', 'Public Domain Dedication and License (PDDL)', 'The Perl License']
   },  
 ]
-function writeToFile(fileName ,data){
-fs.writeFile(fileName, data, (err)=> {
-  if (err)
-  throw err;
-  console.log('Success! Information Transferred');
-});
-
-}
 
 //Function to initialize app
   function init() {
@@ -78,7 +70,18 @@ fs.writeFile(fileName, data, (err)=> {
           console.log(userInput.installationInstructions);
          console.log(userInput.usage);
          console.log(userInput.license);
-         writeFile("README.md", generateMarkdown(userInput));
+        
+         function writeToFile(fileName ,data){
+         fs.writeFile('README.md', generateMarkdown(userInput), (err)=> {
+            if (err)
+            throw err;
+            console.log('Success! Information Transferred');
+          });
+          
+          }
        });
      };
+
+
+
   init ();
