@@ -1,6 +1,7 @@
 const fs = require('fs');
 const  writeFile  = require('./utils/generate-file');
 const inquirer = require('inquirer');
+const generateMarkdown = userInput;
 
 const questions = [
   {
