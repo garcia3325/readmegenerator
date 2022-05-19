@@ -56,7 +56,17 @@ const questions = [
     name: 'license',
     message: 'Please select the appropriate license for your application or project',
     choices: ['MIT', 'Mozilla Public License 2.0', 'Open Database License (ODbL)', 'Public Domain Dedication and License (PDDL)', 'The Perl License']
-  },  
+  },
+{
+  type: 'input',
+  name: 'contributing',
+  message: 'Please enter any contributing members',
+}, 
+{
+  type: 'input',
+  name: 'test',
+  message: 'Please enter any test',
+}, 
 ]
 
 //Function to initialize app
