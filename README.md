@@ -1,6 +1,7 @@
 # ReadMe File Generator
 
    ## License
+   https://img.shields.io/badge/license-MIT-blue
    
    ## Table of Contents
    
