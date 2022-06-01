@@ -5,12 +5,12 @@
    
    ## Table of Contents
    
-    - [Description](##description)
-    - [Installation](##installation)
-    - [Usage](##usage)
-    - [Contribution](##contribution)
-    - [Testing](##testing)
-    - [Additional Info] (##Questions)
+ 1 [Description](##description)
+ 2 [Installation](##installation)
+ 3 [Usage](##usage)
+ 4 [Contribution](##contribution)
+ 5 [Testing](##testing)
+ 6 [Additional Info](##Questions)
 
    ## Description:
     This is a Readme File Generator from the command line
