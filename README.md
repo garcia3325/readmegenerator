@@ -5,24 +5,25 @@
    
    ## Table of Contents
    
-    - [Description] (#description)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Contribution](#contribution)
-    - [Testing](#testing)
-    - [Additional Info] (#Questions)
+    - [Description](##description)
+    - [Installation](##installation)
+    - [Usage](##usage)
+    - [Contribution](##contribution)
+    - [Testing](##testing)
+    - [Additional Info] (##Questions)
 
    ## Description:
     This is a Readme File Generator from the command line
     
-    ## Usage
+   ## Usage
     This project can be used by anyone looking to  generate a  ReadMe File via the commnad linen
    
    ## License:
       MIT
       
    ## Contributing
- 
+   If you would like to contribute on this project submit a pull request and submit and create an issue. 
+   
   ## Tests
     
    ## Questions
