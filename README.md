@@ -1,7 +1,7 @@
 # ReadMe File Generator
 
-   ## License
-   https://img.shields.io/badge/license-MIT-blue
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/garcia3325/readmegenerator)
    
    ## Table of Contents
    
