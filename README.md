@@ -1,7 +1,7 @@
 # ReadMe File Generator
 
    ## License
-  (https://img.shields.io/badges/license-MIT-blue.svg)(https://shields.io)
+  https://img.shields.io/badges/license-MIT-blue.svg https://shields.io
    
    ## Table of Contents
    
